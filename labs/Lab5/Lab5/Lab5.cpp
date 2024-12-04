@@ -61,7 +61,7 @@ struct LinkedList {
         while (temp != nullptr) {
             Node* nextNode = temp->next;
             delete temp;
-            temp - nextNode;
+            temp = nextNode;
         }
         head = nullptr;
     }
@@ -139,5 +139,5 @@ int main() {
         }
     }
 
-    return;
+    return 0;
 }
